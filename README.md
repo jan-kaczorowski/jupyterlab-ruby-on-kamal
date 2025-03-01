@@ -7,6 +7,10 @@ by default it's protected with a token you can extract logs by running `kamal ap
 
 There are tons of configurable options for the JupyterLab base image which you can explore here: https://github.com/jupyter/docker-stacks.
 
+## Kamal and SSL
+Kamal provides very convenient, automatic SSL configuration for one-node deployments with Lets Encrypt.
+<img width="1138" alt="Screenshot 2025-03-01 at 16 12 31" src="https://github.com/user-attachments/assets/5c933c8e-674d-4856-ae03-1fa6eaff44f8" />
+
 ## How to set it up!
 
 1. add dns entry to your domain
