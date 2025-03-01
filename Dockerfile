@@ -18,14 +18,14 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libtool \
     curl && \
+    gcc && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
-RUN apt-get install gcc -y
 
 USER $NB_UID
 
 RUN pip install jupyter_scheduler
+RUN pip install jupyterlab-spreadsheet-editor
 
 USER root
 
