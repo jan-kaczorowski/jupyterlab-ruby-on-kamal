@@ -22,7 +22,7 @@ proxy:
   host: jupyterlab.jankaczorowski.pl
   app_port: 8888
   healthcheck:
-    path: /up
+    path: /
     interval: 10
     timeout: 10
 
