@@ -18,9 +18,10 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libtool \
     curl && \
-    gcc && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+RUN apt-get install -y gcc
 
 USER $NB_UID
 
